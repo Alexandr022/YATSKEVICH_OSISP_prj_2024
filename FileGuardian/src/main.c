@@ -1,12 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "monitor.h"
-#include "config.h"
 
 int main() {
     printf("Программа запущена...\n");
-
-    load_configuration("config.yaml");
 
     start_monitoring();
 

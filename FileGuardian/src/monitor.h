@@ -14,11 +14,11 @@ typedef struct {
 } DirectoryInfo;
 
 extern volatile sig_atomic_t flag;
-extern DirectoryInfo directories[MAX_DIRECTORIES]; // Объявляем внешнюю переменную
-extern int num_directories; // Объявляем внешнюю переменную
+extern DirectoryInfo directories[MAX_DIRECTORIES]; 
+extern int num_directories;
 
 void start_monitoring();
 void wait_for_sigint();
-void monitor_directory(const char* directory_path);
+void monitor_directory(const char *directory_path);
 
 #endif

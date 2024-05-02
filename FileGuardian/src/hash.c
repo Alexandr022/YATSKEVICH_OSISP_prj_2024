@@ -37,6 +37,6 @@ char* calculate_hash(const char* filepath) {
     for (int i = 0; i < SHA256_DIGEST_LENGTH; i++) {
         sprintf(&hash_string[i * 2], "%02x", (unsigned int)hash[i]);
     }
-
+   
     return hash_string;
 }
